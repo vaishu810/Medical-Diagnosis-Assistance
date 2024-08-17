@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Disease Predictor</h1>
+    <form action="/predict" method="post">
+        {% for symptom in symptoms %}
+        <label for="{{ symptom }}">{{ symptom }}:</label>
+        <input type="number" id="{{ symptom }}" name="{{ symptom }}" min="0" max="1"><br>
+        {% endfor %}
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
