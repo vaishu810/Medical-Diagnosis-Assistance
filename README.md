@@ -23,7 +23,7 @@ This project aims to provide a simple and user-friendly interface for predicting
 ## Installation
 1. Clone the repository:
    ```
-   git clone https://github.com/Vikhyathsai11/diagnosis.git
+   git clone https://github.com/vaishu810/Medical-Diagnosis-Assistance.git
    ```
 
 2. Install the required dependencies:
